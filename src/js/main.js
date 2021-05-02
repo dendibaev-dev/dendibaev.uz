@@ -1,0 +1,1 @@
+const ab = (a, b) => a * b
