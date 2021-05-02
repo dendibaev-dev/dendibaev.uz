@@ -1,4 +1,4 @@
-include ../../components/ui/ui.pug
+include ../ui/ui.pug
 
 doctype html
 html(lang="ru")
@@ -8,6 +8,7 @@ html(lang="ru")
             title Dendibaev Arman
             meta(content="width=device-width, initial-scale=1" name="viewport")
             meta(content="ie=edge" http-equiv="x-ua-compatible")
+            link(rel="stylesheet" href="normalize.css")
             link(rel="stylesheet" href="assets/css/styles.css")
             link(rel='apple-touch-icon-precomposed' sizes='57x57' href='favicons/apple-touch-icon-57x57.png')
             link(rel='apple-touch-icon-precomposed' sizes='114x114' href='favicons/apple-touch-icon-114x114.png')
@@ -23,9 +24,9 @@ html(lang="ru")
             link(href="favicons/safari-pinned-tab.svg" rel="mask-icon" color="#1c1c1c")
         body
             block header
-                include header
+                include ../header/header.pug
             block content
             block footer
-                include footer
+                include ../footer/footer.pug
             block script
                 script(src="/js/main.min.js")

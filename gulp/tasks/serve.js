@@ -13,7 +13,7 @@ module.exports = function serve(cb) {
     },
   });
 
-  gulp.watch("src/pages/*.pug", pug2html);
+  gulp.watch("src/**/*.pug", pug2html);
   gulp.watch("src/js/**/*.js", script);
   gulp.watch("src/common/images/*", imageMinify);
   gulp.watch("src/common/images/icons/*.svg", svgSprite);
