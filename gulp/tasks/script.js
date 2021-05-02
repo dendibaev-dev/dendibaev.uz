@@ -18,5 +18,5 @@ module.exports = function script(cb) {
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest("build/js"));
 
-  return cb;
+  return cb();
 };
